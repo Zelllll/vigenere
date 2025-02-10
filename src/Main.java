@@ -58,7 +58,7 @@ public class Main {
      * @param key          The encryption key.
      * @return The encrypted ciphertext.
      */
-    static String vigenereEncrypt(String inputMessage, String key) {
+    private static String vigenereEncrypt(String inputMessage, String key) {
         String preparedMessage = vigenerePrepareString(inputMessage);
         String preparedKey = vigenerePrepareString(key);
         StringBuilder out = new StringBuilder();
@@ -75,7 +75,7 @@ public class Main {
      * @param key          The decryption key.
      * @return The decrypted plaintext.
      */
-    static String vigenereDecrypt(String inputMessage, String key) {
+    private static String vigenereDecrypt(String inputMessage, String key) {
         String preparedMessage = vigenerePrepareString(inputMessage);
         String preparedKey = vigenerePrepareString(key);
         StringBuilder out = new StringBuilder();
